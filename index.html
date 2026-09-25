@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Login/Register</title>
+    <!-- Redirect otomatis ke halaman login (file PHP utama) -->
+    <meta http-equiv="refresh" content="0; url=/login.php">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e5e7eb;
+            text-align: center;
+        }
+        .box { max-width: 380px; padding: 20px; }
+        a { color: #a5b4fc; font-weight: 600; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+    <script>
+        // Redirect via JavaScript sebagai cadangan jika meta refresh diblokir
+        window.location.replace('/login.php');
+    </script>
+</head>
+<body>
+    <div class="box">
+        <p>Mengalihkan ke halaman login...</p>
+        <p style="margin-top:10px; font-size:14px;">
+            Jika tidak otomatis teralihkan, <a href="/login.php">klik di sini</a>.
+        </p>
+    </div>
+</body>
+</html>
